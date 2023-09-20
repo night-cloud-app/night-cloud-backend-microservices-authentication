@@ -16,7 +16,7 @@ public static class ServiceExtensions
     public static void ConfigureDatabaseContext(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<ApplicationDatabaseContext>(options =>
-            options.UseSqlServer(ConnectionStringHelper.GetConnectionString(configuration)));
+            options.UseNpgsql(configuration.GetConnectionString()));
     }
 
     public static void ConfigureIdentity(this IServiceCollection services)
