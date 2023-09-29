@@ -4,14 +4,13 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
-COPY "Shared/" "Shared/"
 WORKDIR "/src/Authentication/src"
-COPY "/Microservices/Authentication/src" .
+COPY "/microservices/authentication/src" .
 WORKDIR "Authentication.Presentation"
 RUN dotnet restore "Authentication.Presentation.csproj"
 
 WORKDIR "/src/Authentication/Tests/Authentication.Application.UnitTests"
-COPY "/Microservices/Authentication/Tests/Authentication.Application.UnitTests" .
+COPY "/microservices/authentication/Tests/Authentication.Application.UnitTests" .
 RUN dotnet test -c Release
 
 WORKDIR "/src/Authentication/src/Authentication.Presentation"
