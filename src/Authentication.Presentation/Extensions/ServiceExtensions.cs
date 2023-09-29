@@ -4,7 +4,7 @@ using Authentication.Application.Extensions.Services;
 using Authentication.Application.Extensions.Services.Contracts;
 using Authentication.Domain.Entities;
 using Authentication.Infrastructure.Persistence;
-using DatabaseInfrastructure.Helper;
+using NightCloud.Common.DatabaseInfrastructure.Helper;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

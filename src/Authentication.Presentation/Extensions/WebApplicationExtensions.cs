@@ -1,6 +1,6 @@
 ﻿using Authentication.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Middlewares.ExceptionHandling;
+using NightCloud.Common.Middlewares.ExceptionHandling;
 using Serilog;
 
 namespace Authentication.Presentation.Extensions;

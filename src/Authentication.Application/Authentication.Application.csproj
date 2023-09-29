@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\..\Shared\Middlewares\Middlewares.csproj" />
+        <PackageReference Include="NightCloud.Common.Middlewares" Version="1.0.4" />
       <ProjectReference Include="..\Authentication.Domain\Authentication.Domain.csproj" />
     </ItemGroup>
 

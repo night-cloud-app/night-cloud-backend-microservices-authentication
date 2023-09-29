@@ -1,4 +1,4 @@
-﻿using Middlewares.ExceptionHandling.Exceptions;
+﻿using NightCloud.Common.Middlewares.ExceptionHandling.Exceptions;
 
 namespace Authentication.Application.Common.Exceptions.BadRequest;
 public class InvalidAccessTokenBadRequestException : BadRequestException
